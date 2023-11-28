@@ -1,0 +1,132 @@
+#choose {
+    padding: 100px 0 150px;
+
+    .choose__tabs-btn {
+        display: flex;
+        gap: 80px;
+
+        padding: 0 150px 100px;
+
+        .tabs__btn-item {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .tabs__btn-item--active {
+            color: #06F;
+        }
+
+    }
+
+    .tabs__content-item {
+
+        display: none;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 100px 40px; //1 - между рядами, 2 между элементами
+
+        .card {
+
+            text-align: center;
+
+            border: 1px solid #06F;
+
+            .card__img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .card__title {
+                margin-bottom: 20px;
+
+
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .card__text {
+                margin-bottom: 20px;
+            }
+
+            .card__price {
+                margin-bottom: 20px;
+
+                font-size: 24px;
+                font-weight: 700;
+
+            }
+
+            .card__link {
+                display: block;
+                border-top: 1px solid #06F;
+
+                color: #06F;
+            }
+
+        }
+
+
+
+    }
+
+    .tabs__content-item.tabs__content-item--active {
+        display: grid;
+    }
+
+    .choose__btn {
+        display: block;
+
+        width: 223px;
+        margin: 70px auto 0;
+        padding: 13px 61px;
+
+        background-color: #151515;
+        color: #FFF;
+
+
+    }
+}
+
+@media (max-width: 1180px) {
+    #choose .tabs__content-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1040px) {
+    #choose {
+        .choose__tabs-btn {
+            padding: 0 0 50px;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #choose .tabs__content-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #choose .choose__tabs-btn {
+        justify-content: center;
+    }
+    #choose .choose__tabs-btn .tabs__btn-item {
+        font-size: 18px;
+    }
+
+}
+@media (max-width: 500px) {
+    #choose {
+        padding: 50px 0 150px;
+    }
+    #choose .tabs__content-item {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    #choose .choose__tabs-btn {
+        flex-direction: column; 
+    }
+    #choose .choose__tabs-btn .tabs__btn-item {
+        font-size: 25px;
+    }
+}
+

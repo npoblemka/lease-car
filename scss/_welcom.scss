@@ -1,0 +1,34 @@
+#welcome__video {
+
+    .welcome__video-title {
+        margin-bottom: 20px;
+    }
+
+    .welcome__video-text {
+
+        margin-bottom: 50px;
+
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .welcome__video-content {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1040px) {
+    .welcome__video-content {
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media (max-width:570px) {
+    .welcome__video-content {
+        padding-bottom: 50px;
+        height: 300px;
+    }
+}
